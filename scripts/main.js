@@ -3,9 +3,10 @@ function initDivs(n) {
 
     for (let i = 0; i < n; i++) {
         const div = document.createElement('div');
-        //div.style = 'width: 50px; height: 50px; text-align: center;'
-        //For visual purposes during testing
-        div.textContent = 'a';
+
+        div.addEventListener('mouseenter', (e) => {
+            e.target.style.backgroundColor = 'black';
+        })
         container.appendChild(div);
     }
 }
