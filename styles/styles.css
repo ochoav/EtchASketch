@@ -4,9 +4,17 @@
 
 .grid-container {
     margin: 0 auto;
+    border: solid 2px;
     height: 700px;
     width: 700px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+}
+
+#clear {
+    display: block;
+    margin: 12px auto 0;
+    padding: 20px 70px;
+    border-radius: 5px;
+    font-size: medium;
+    border: none;
 }
